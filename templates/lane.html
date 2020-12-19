@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lane Directions</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+        <link rel="shortcut icon" href="#">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    </head>
+    <body>
+        <h1 class="lane">LANE {{ lane }}</h1>
+        <div class="instructions">PROCEED TO BAY</div>
+        <div class="bay">
+            <div class=content>
+                {{ value }}
+            </div>
+        </div>
+        <img src="{{ url_for('static',filename='left_arrow.png') }}">
+        <div class="message">
+            STAY WITH YOUR VEHICLE
+        </div>
+        <div class="message">
+            QU&Eacute;DATE CON TU VEH&Iacute;CULO
+        </div>
+    </body>
+</html>
